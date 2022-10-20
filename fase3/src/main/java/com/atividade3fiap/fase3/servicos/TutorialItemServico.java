@@ -26,9 +26,9 @@ public class TutorialItemServico {
         this.tutorialItemMapeador = tutorialItemMapeador;
     }
 
-    public List<TutorialItem> buscarTodos() {
-        return tutorialItemRepositorio.findAll();
-    }
+//    public List<TutorialItem> buscarTodos() {
+//        return tutorialItemRepositorio.findAll();
+//    }
 
     public Page<TutorialItem> buscarTodos(Pageable paginacao) {
         return tutorialItemRepositorio.findAll(paginacao);

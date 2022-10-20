@@ -8,7 +8,7 @@ import org.springframework.hateoas.server.core.Relation;
 
 @Getter @Setter
 @Entity
-@Relation(collectionRelation = "tutorialItens")
+@Table(name = "tutorialItens")
 public class TutorialItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
