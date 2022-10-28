@@ -37,7 +37,7 @@ public class TutorialItemAssembler implements SimpleRepresentationModelAssembler
                 .withSelfRel()
                 .withType("POST");
 
-        Link selfLink = linkTo(methodOn(TutorialItemControllerApi.class).buscarTodos(null))
+        Link selfLink = linkTo(methodOn(TutorialItemControllerApi.class).buscarTodos())
                 .withSelfRel()
                 .withType("GET");
 

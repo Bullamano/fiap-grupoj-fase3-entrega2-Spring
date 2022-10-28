@@ -15,23 +15,19 @@ import java.util.List;
 @Service
 public class TutorialItemServico {
 
-
     @Autowired
     private TutorialItemRepositorio tutorialItemRepositorio;
 
     @Autowired
     private TutorialItemMapeador tutorialItemMapeador;
 
-
-
-
     public List<TutorialItem> buscarTodos() {
         return tutorialItemRepositorio.findAll();
     }
 
-    public Page<TutorialItem> buscarTodos(Pageable paginacao) {
-        return tutorialItemRepositorio.findAll(paginacao);
-    }
+    //public Page<TutorialItem> buscarTodos(Pageable paginacao) {
+    //    return tutorialItemRepositorio.findAll(paginacao);
+    //}
 
     public TutorialItem buscarPorId(Long id) {
         TutorialItem tutorialItemEncontrado = tutorialItemRepositorio.findById(id)
@@ -68,11 +64,8 @@ public class TutorialItemServico {
     public void excluirPorId(Long id) {
         TutorialItem tutorialItemEncontrado = buscarPorId(id);
 
-        if (!TutorialItemRepositorio.findByTutorialItem(tutorialItemEncontrado).isEmpty()) {
+        if (tutorialItemEncontrado != null) {
             tutorialItemRepositorio.delete(tutorialItemEncontrado);
-
         }
-
     }
-
 }

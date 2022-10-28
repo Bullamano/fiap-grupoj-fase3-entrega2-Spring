@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "e8daf5c0-b796-4592-af73-eb6f9480494c",
+		"name": "Runner-PopulateH2-GrupoJ-Fase3-Entrega2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11088224"
+	},
+	"item": [
+		{
+			"name": "Cadastro para Runner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"{{title}}\",\r\n    \"materials\": \"{{materials}}\",\r\n    \"steps\": \"{{steps}}\",\r\n    \"imageUrl\": \"{{imageUrl}}\",\r\n    \"category\": \"{{category}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/tutorialItem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"tutorialItem"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201 - Cadastro",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"teste title\",\r\n    \"materials\": \"teste materials\",\r\n    \"steps\": \"teste steps\",\r\n    \"imageUrl\": \"teste imageUrl\",\r\n    \"category\": \"teste category\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/v1/tutorialItem",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"tutorialItem"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/hal+json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Oct 2022 20:44:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 5,\n    \"title\": \"teste title\",\n    \"materials\": \"teste materials\",\n    \"steps\": \"teste steps\",\n    \"imageUrl\": \"teste steps\",\n    \"category\": \"teste category\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}

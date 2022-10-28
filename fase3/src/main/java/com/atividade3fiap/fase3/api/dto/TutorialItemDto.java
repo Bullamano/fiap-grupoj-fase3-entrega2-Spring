@@ -7,19 +7,24 @@ import javax.validation.constraints.Size;
 
 @Getter @Setter
 public class TutorialItemDto {
+
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 100)
     private  String title;
+
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 500)
     private String materials;
+
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 500)
     private  String steps;
+
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 500)
     private  String imageUrl;
+
     @NotNull
-    @Size(min = 3, max = 40)
+    @Size(min = 3, max = 100)
     private String category;
 }

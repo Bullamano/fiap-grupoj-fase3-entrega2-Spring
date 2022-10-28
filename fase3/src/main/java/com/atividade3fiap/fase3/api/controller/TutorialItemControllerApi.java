@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/tutorialItem")
@@ -33,10 +34,14 @@ public class TutorialItemControllerApi  {
     }
 
     @GetMapping
-    public CollectionModel<EntityModel<TutorialItem>> buscarTodos(Pageable paginacao) {
-        Page<TutorialItem> tutorialItems = tutorialItemServico.buscarTodos(paginacao);
+    public List<TutorialItem> buscarTodos() {
+        List<TutorialItem> tutorialItems = tutorialItemServico.buscarTodos();
 
-        return pagedResourcesAssembler.toModel(tutorialItems, tutorialItemAssembler);
+        return tutorialItems;
+
+        //Caso seja desejada paginação, pode ser descomentada a linha abaixo e o retorno
+        //trocado por CollectionModel<EntityModel<TutorialItem>>
+        //return pagedResourcesAssembler.toModel(tutorialItems, tutorialItemAssembler);
     }
 
     @GetMapping("/{id}")
