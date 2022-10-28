@@ -1,6 +1,6 @@
 package com.atividade3fiap.fase3.api.excecoes;
 
-import com.fasterxml.jackson.annotation.JsonAnySetter;
+
 import lombok.Getter;
 import lombok.Setter;
 

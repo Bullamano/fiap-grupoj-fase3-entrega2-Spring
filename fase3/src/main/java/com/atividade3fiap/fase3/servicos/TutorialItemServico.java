@@ -2,33 +2,32 @@ package com.atividade3fiap.fase3.servicos;
 
 import com.atividade3fiap.fase3.api.dto.TutorialItemDto;
 import com.atividade3fiap.fase3.api.excecoes.TutorialItemNaoEncontradoException;
-import com.atividade3fiap.fase3.api.excecoes.TutorialItemPossuiItensException;
 import com.atividade3fiap.fase3.api.mapeadores.TutorialItemMapeador;
 import com.atividade3fiap.fase3.entidade.TutorialItem;
 import com.atividade3fiap.fase3.repositorios.TutorialItemRepositorio;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class TutorialItemServico {
 
 
+    @Autowired
     private TutorialItemRepositorio tutorialItemRepositorio;
 
+    @Autowired
     private TutorialItemMapeador tutorialItemMapeador;
 
-    public TutorialItemServico(TutorialItemRepositorio tutorialItemRepositorio) {
-        this.tutorialItemRepositorio = tutorialItemRepositorio;
-    }
 
-    public TutorialItemServico(TutorialItemMapeador tutorialItemMapeador) {
-        this.tutorialItemMapeador = tutorialItemMapeador;
-    }
 
-//    public List<TutorialItem> buscarTodos() {
-//        return tutorialItemRepositorio.findAll();
-//    }
+
+    public List<TutorialItem> buscarTodos() {
+        return tutorialItemRepositorio.findAll();
+    }
 
     public Page<TutorialItem> buscarTodos(Pageable paginacao) {
         return tutorialItemRepositorio.findAll(paginacao);

@@ -5,6 +5,7 @@ import com.atividade3fiap.fase3.api.dto.TutorialItemDto;
 import com.atividade3fiap.fase3.api.hateoas.TutorialItemAssembler;
 import com.atividade3fiap.fase3.entidade.TutorialItem;
 import com.atividade3fiap.fase3.servicos.TutorialItemServico;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PagedResourcesAssembler;
@@ -14,26 +15,21 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
 import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/v1/tutorialItem")
-public class TutorialItemControllerApi {
+public class TutorialItemControllerApi  {
+   @Autowired
     private TutorialItemServico tutorialItemServico;
+   @Autowired
     private PagedResourcesAssembler<TutorialItem> pagedResourcesAssembler;
+    @Autowired
     private TutorialItemAssembler tutorialItemAssembler;
-
-
-    public TutorialItemControllerApi(TutorialItemAssembler tutorialItemAssembler) {
-        this.tutorialItemAssembler = tutorialItemAssembler;
-    }
 
     public TutorialItemControllerApi(PagedResourcesAssembler<TutorialItem> pagedResourcesAssembler) {
         this.pagedResourcesAssembler = pagedResourcesAssembler;
-    }
-
-    public TutorialItemControllerApi(TutorialItemServico tutorialItemServico) {
-        this.tutorialItemServico = tutorialItemServico;
     }
 
     @GetMapping

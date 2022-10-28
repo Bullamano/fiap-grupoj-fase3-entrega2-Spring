@@ -11,7 +11,8 @@ import org.springframework.hateoas.EntityModel;
 import org.springframework.http.ResponseEntity;
 import springfox.documentation.annotations.ApiIgnore;
 
-@Api(description = "TutorialItem Controller", tags = "TutorialItens")
+
+@Api(tags = "TutorialItem")
 public interface TutotialItemControleApiDoc {
 
     @ApiOperation(value = "Listar todos os tutorialItems")
