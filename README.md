@@ -3,7 +3,7 @@ Entrega 2 da Fase 3 do MBA de full stack development da FIAP pelo grupo J.
 
   ##
   
-Esta entrega da atividade 3 foi desenvolvida em API REST para um CRUD (Create, Read, Update e Delete - em português Criar, Ler, Atualizar e Remover) utilizando Spring Boot 4, Hibernate, JPA e MySQL.
+Esta entrega da atividade 3 foi desenvolvida em API REST para um CRUD (Create, Read, Update e Delete - em português Criar, Ler, Atualizar e Remover) utilizando Spring Boot 4, Hibernate, JPA e H2.
 
 ## Ferramentas
 
@@ -11,7 +11,6 @@ Para completar o desenvolvimento foram utilizadas as seguintes ferramentas:
 
 Java JDK (v8+) (https://www.oracle.com/technetwork/java/javase/downloads/index.html)
 Maven (v3+) (https://maven.apache.org/download.cgi)
-MySQL + MySQL Workbench (última versão disponível) (https://dev.mysql.com/downloads/workbench/)
 
 ## A API desenvolvida
 
@@ -58,5 +57,18 @@ src
 <br/>│&emsp;&emsp;│&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <br/>│&emsp;&emsp;└── resources
 <br/>└── test
+
+  ##
+  
+## Como rodar o projeto
+
+Para rodar o projeto siga o passo-a-passo abaixo:
+<ul>
+<li>Abra o projeto na sua IDE (recomendamos o IntelliJ IDEA) e configure para que a aplicação seja iniciada a partir do fonte <b>Fase3Application</b> (localizado em fase3/src/main/java/com/atividade3fiap/fase3/Fase3Application.java);</li>
+<li>Certifique-se de ter configurado uma versão superior à 8 da jdk para o projeto (durante o desenvolvimento, foi usada a JDK-17);</li>
+<li>Com a aplicação rodando, já poderá ser utilizada a API. Fornecemos uma collection do Postman com as chamadas possíveis e com um runner para popular o H2 inicialmente. Primeiramente, então, importe as duas collections presentes em <i>fase3/Postman/</i> para o seu Postman. Caso necessite, há um tutorial sobre importação de collections para o Postman <a href="https://learning.postman.com/docs/getting-started/importing-and-exporting-data/">aqui</a>;</li>
+<li>Com as collections já importadas, rode a collection <i>Runner-PopulateH2-GrupoJ-Fase3-Entrega2</i> (com quantas iterações desejar) usando o CSV disponibilizado (<i>csvForRunnerToPopulateH2</i>). Isso populará o banco para o uso, facilitando as chamadas (e não fazendo com que seja necessário chamar a API de cadastro antes das outras, necessariamente). Caso necessite, há um tutorial sobre runners <a href="https://blog.postman.com/using-csv-and-json-files-in-the-postman-collection-runner/">aqui</a>;</li>
+<li>Com tudo isso feito, basta usar a collection <i>NeedHelp-GrupoJ-Fase3-Entrega2-Spring</i> para realizar as chamadas.</li>
+</ul>
 
   ##
