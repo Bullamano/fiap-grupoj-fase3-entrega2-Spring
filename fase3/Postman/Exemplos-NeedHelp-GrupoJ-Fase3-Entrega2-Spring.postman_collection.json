@@ -397,8 +397,20 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
 							"key": "Content-Type",
-							"value": "application/hal+json"
+							"value": "application/json"
 						},
 						{
 							"key": "Transfer-Encoding",
@@ -406,7 +418,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Oct 2022 20:44:46 GMT"
+							"value": "Sat, 29 Oct 2022 16:16:44 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -418,7 +430,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"_embedded\": {\n        \"tutorialItemList\": [\n            {\n                \"id\": 4,\n                \"title\": \"teste title\",\n                \"materials\": \"teste materials\",\n                \"steps\": \"teste steps\",\n                \"imageUrl\": \"teste steps\",\n                \"category\": \"teste category\",\n                \"_links\": {\n                    \"self\": [\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                            \"type\": \"GET\"\n                        },\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                            \"type\": \"PUT\"\n                        },\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                            \"type\": \"DELETE\"\n                        }\n                    ]\n                }\n            },\n            {\n                \"id\": 5,\n                \"title\": \"teste title\",\n                \"materials\": \"teste materials\",\n                \"steps\": \"teste steps\",\n                \"imageUrl\": \"teste steps\",\n                \"category\": \"teste category\",\n                \"_links\": {\n                    \"self\": [\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                            \"type\": \"GET\"\n                        },\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                            \"type\": \"PUT\"\n                        },\n                        {\n                            \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                            \"type\": \"DELETE\"\n                        }\n                    ]\n                }\n            }\n        ]\n    },\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost:8080/api/v1/tutorialItem?pagina=1&tamanho=2\"\n        }\n    },\n    \"page\": {\n        \"size\": 2,\n        \"totalElements\": 2,\n        \"totalPages\": 1,\n        \"number\": 1\n    }\n}"
+					"body": "[\n    {\n        \"id\": 7,\n        \"title\": \"Como fazer lasagna\",\n        \"materials\": \"Queijo presunto etc.\",\n        \"steps\": \"Compre a lasagna pronta no mercado.\",\n        \"imageUrl\": \"Compre a lasagna pronta no mercado.\",\n        \"category\": \"comidas\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Como abrir os olhos\",\n        \"materials\": \"Olhos (de preferências os seus)\",\n        \"steps\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"imageUrl\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"category\": \"Bizarrices\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Como respirar\",\n        \"materials\": \"Um sistema respiratório (de preferência\",\n        \"steps\": \"o seu)\",\n        \"imageUrl\": \"o seu)\",\n        \"category\": \"https://static.thetoptens.com/img/lists/181871lg.jpg\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Como fazer lasagna\",\n        \"materials\": \"Queijo presunto etc.\",\n        \"steps\": \"Compre a lasagna pronta no mercado.\",\n        \"imageUrl\": \"Compre a lasagna pronta no mercado.\",\n        \"category\": \"comidas\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Como abrir os olhos\",\n        \"materials\": \"Olhos (de preferências os seus)\",\n        \"steps\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"imageUrl\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"category\": \"Bizarrices\"\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Como respirar\",\n        \"materials\": \"Um sistema respiratório (de preferência\",\n        \"steps\": \"o seu)\",\n        \"imageUrl\": \"o seu)\",\n        \"category\": \"https://static.thetoptens.com/img/lists/181871lg.jpg\"\n    }\n]"
 				}
 			]
 		}
