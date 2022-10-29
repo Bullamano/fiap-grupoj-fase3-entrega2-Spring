@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"teste title\",\r\n    \"materials\": \"teste materials\",\r\n    \"steps\": \"teste steps\",\r\n    \"imageUrl\": \"teste imageUrl\",\r\n    \"category\": \"teste category\"\r\n}",
+					"raw": "{\r\n    \"title\": \"teste title\",\r\n    \"materials\": \"teste materials\",\r\n    \"steps\": \"teste steps\",\r\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\r\n    \"category\": \"teste category\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -41,7 +41,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"teste title\",\r\n    \"materials\": \"teste materials\",\r\n    \"steps\": \"teste steps\",\r\n    \"imageUrl\": \"teste imageUrl\",\r\n    \"category\": \"teste category\"\r\n}",
+							"raw": "{\r\n    \"title\": \"teste title\",\r\n    \"materials\": \"teste materials\",\r\n    \"steps\": \"teste steps\",\r\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\r\n    \"category\": \"teste category\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -66,6 +66,18 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
 							"key": "Content-Type",
 							"value": "application/hal+json"
 						},
@@ -75,7 +87,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Oct 2022 20:44:04 GMT"
+							"value": "Sat, 29 Oct 2022 17:30:39 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -87,7 +99,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": 5,\n    \"title\": \"teste title\",\n    \"materials\": \"teste materials\",\n    \"steps\": \"teste steps\",\n    \"imageUrl\": \"teste steps\",\n    \"category\": \"teste category\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/5\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"id\": 19,\n    \"title\": \"teste title\",\n    \"materials\": \"teste materials\",\n    \"steps\": \"teste steps\",\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\n    \"category\": \"teste category\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -98,7 +110,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"teste title modificado\",\r\n    \"materials\": \"teste materials modificado\",\r\n    \"steps\": \"teste steps modificado\",\r\n    \"imageUrl\": \"teste imageUrl modificado\",\r\n    \"category\": \"teste category modificado\"\r\n}",
+					"raw": "{\r\n    \"title\": \"teste title modificado\",\r\n    \"materials\": \"teste materials modificado\",\r\n    \"steps\": \"teste steps modificado\",\r\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\r\n    \"category\": \"teste category modificado\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,7 +118,7 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/tutorialItem/4",
+					"raw": "localhost:8080/api/v1/tutorialItem/19",
 					"host": [
 						"localhost"
 					],
@@ -115,7 +127,7 @@
 						"api",
 						"v1",
 						"tutorialItem",
-						"4"
+						"19"
 					]
 				}
 			},
@@ -127,7 +139,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"teste title modificado\",\r\n    \"materials\": \"teste materials modificado\",\r\n    \"steps\": \"teste steps modificado\",\r\n    \"imageUrl\": \"teste imageUrl modificado\",\r\n    \"category\": \"teste category modificado\"\r\n}",
+							"raw": "{\r\n    \"title\": \"teste title modificado\",\r\n    \"materials\": \"teste materials modificado\",\r\n    \"steps\": \"teste steps modificado\",\r\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\r\n    \"category\": \"teste category modificado\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -135,7 +147,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8080/api/v1/tutorialItem/4",
+							"raw": "localhost:8080/api/v1/tutorialItem/19",
 							"host": [
 								"localhost"
 							],
@@ -144,7 +156,7 @@
 								"api",
 								"v1",
 								"tutorialItem",
-								"4"
+								"19"
 							]
 						}
 					},
@@ -152,6 +164,18 @@
 					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
 						{
 							"key": "Content-Type",
 							"value": "application/hal+json"
@@ -162,7 +186,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Oct 2022 20:46:04 GMT"
+							"value": "Sat, 29 Oct 2022 17:31:03 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -174,7 +198,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": 4,\n    \"title\": \"teste title modificado\",\n    \"materials\": \"teste materials modificado\",\n    \"steps\": \"teste steps modificado\",\n    \"imageUrl\": \"teste steps modificado\",\n    \"category\": \"teste category modificado\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"id\": 19,\n    \"title\": \"teste title modificado\",\n    \"materials\": \"teste materials modificado\",\n    \"steps\": \"teste steps modificado\",\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\n    \"category\": \"teste category modificado\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -204,7 +228,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/tutorialItem/4",
+							"raw": "localhost:8080/api/v1/tutorialItem/19",
 							"host": [
 								"localhost"
 							],
@@ -213,7 +237,7 @@
 								"api",
 								"v1",
 								"tutorialItem",
-								"4"
+								"19"
 							]
 						}
 					},
@@ -221,6 +245,18 @@
 					"code": 200,
 					"_postman_previewlanguage": "json",
 					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
 						{
 							"key": "Content-Type",
 							"value": "application/hal+json"
@@ -231,7 +267,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 28 Oct 2022 20:43:49 GMT"
+							"value": "Sat, 29 Oct 2022 17:31:57 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -243,7 +279,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": 4,\n    \"title\": \"teste title\",\n    \"materials\": \"teste materials\",\n    \"steps\": \"teste steps\",\n    \"imageUrl\": \"teste steps\",\n    \"category\": \"teste category\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/4\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
+					"body": "{\n    \"id\": 19,\n    \"title\": \"teste title modificado\",\n    \"materials\": \"teste materials modificado\",\n    \"steps\": \"teste steps modificado\",\n    \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\n    \"category\": \"teste category modificado\",\n    \"_links\": {\n        \"self\": [\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"GET\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"PUT\"\n            },\n            {\n                \"href\": \"http://localhost:8080/api/v1/tutorialItem/19\",\n                \"type\": \"DELETE\"\n            }\n        ]\n    }\n}"
 				}
 			]
 		},
@@ -418,7 +454,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Sat, 29 Oct 2022 16:16:44 GMT"
+							"value": "Sat, 29 Oct 2022 17:32:38 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -430,7 +466,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": 7,\n        \"title\": \"Como fazer lasagna\",\n        \"materials\": \"Queijo presunto etc.\",\n        \"steps\": \"Compre a lasagna pronta no mercado.\",\n        \"imageUrl\": \"Compre a lasagna pronta no mercado.\",\n        \"category\": \"comidas\"\n    },\n    {\n        \"id\": 8,\n        \"title\": \"Como abrir os olhos\",\n        \"materials\": \"Olhos (de preferências os seus)\",\n        \"steps\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"imageUrl\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"category\": \"Bizarrices\"\n    },\n    {\n        \"id\": 9,\n        \"title\": \"Como respirar\",\n        \"materials\": \"Um sistema respiratório (de preferência\",\n        \"steps\": \"o seu)\",\n        \"imageUrl\": \"o seu)\",\n        \"category\": \"https://static.thetoptens.com/img/lists/181871lg.jpg\"\n    },\n    {\n        \"id\": 10,\n        \"title\": \"Como fazer lasagna\",\n        \"materials\": \"Queijo presunto etc.\",\n        \"steps\": \"Compre a lasagna pronta no mercado.\",\n        \"imageUrl\": \"Compre a lasagna pronta no mercado.\",\n        \"category\": \"comidas\"\n    },\n    {\n        \"id\": 11,\n        \"title\": \"Como abrir os olhos\",\n        \"materials\": \"Olhos (de preferências os seus)\",\n        \"steps\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"imageUrl\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"category\": \"Bizarrices\"\n    },\n    {\n        \"id\": 12,\n        \"title\": \"Como respirar\",\n        \"materials\": \"Um sistema respiratório (de preferência\",\n        \"steps\": \"o seu)\",\n        \"imageUrl\": \"o seu)\",\n        \"category\": \"https://static.thetoptens.com/img/lists/181871lg.jpg\"\n    }\n]"
+					"body": "[\n    {\n        \"id\": 19,\n        \"title\": \"teste title modificado\",\n        \"materials\": \"teste materials modificado\",\n        \"steps\": \"teste steps modificado\",\n        \"imageUrl\": \"https://i.pinimg.com/originals/f6/87/23/f68723e1729c255bcf8b5febc406b5ee.jpg\",\n        \"category\": \"teste category modificado\"\n    },\n    {\n        \"id\": 20,\n        \"title\": \"Como fazer lasagna\",\n        \"materials\": \"Queijo presunto etc.\",\n        \"steps\": \"Compre a lasagna pronta no mercado.\",\n        \"imageUrl\": \"https://www.jessicagavin.com/wp-content/uploads/2017/07/meat-lasagna-1200.jpg\",\n        \"category\": \"comidas\"\n    },\n    {\n        \"id\": 21,\n        \"title\": \"Como abrir os olhos\",\n        \"materials\": \"Olhos (de preferências os seus)\",\n        \"steps\": \"Parabéns! Se você está lendo isso... já conseguiu!\",\n        \"imageUrl\": \"https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/A_blue_eye.jpg/1044px-A_blue_eye.jpg\",\n        \"category\": \"Bizarrices\"\n    },\n    {\n        \"id\": 22,\n        \"title\": \"Como respirar\",\n        \"materials\": \"Um sistema respiratório (de preferência o seu)\",\n        \"steps\": \"Respire. Se você não conseguiu seguir este passo... tomara que alguém consiga ligar pro 190... RÁPIDO.\",\n        \"imageUrl\": \"https://static.thetoptens.com/img/lists/181871lg.jpg\",\n        \"category\": \"Inúteis\"\n    }\n]"
 				}
 			]
 		}

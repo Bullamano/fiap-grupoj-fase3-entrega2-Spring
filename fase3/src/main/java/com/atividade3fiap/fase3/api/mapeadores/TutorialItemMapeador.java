@@ -21,7 +21,7 @@ public class TutorialItemMapeador {
         tutorialItem.setTitle(tutorialItemDTO.getTitle());
         tutorialItem.setMaterials(tutorialItemDTO.getMaterials());
         tutorialItem.setSteps(tutorialItemDTO.getSteps());
-        tutorialItem.setImageUrl(tutorialItemDTO.getSteps());
+        tutorialItem.setImageUrl(tutorialItemDTO.getImageUrl());
         tutorialItem.setCategory(tutorialItemDTO.getCategory());
 
         return tutorialItem;
